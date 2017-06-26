@@ -1,0 +1,565 @@
+*
+{
+  margin: 0;
+  padding:0;
+}
+
+html
+{
+  width: 100%;
+  height: 100%;
+}
+
+body
+{
+  max-width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.negrito
+{
+  font-weight: bold;
+}
+
+.clearfix:before, .clearfix:after
+{
+  content: " "; 
+  display: table; 
+}
+
+.clearfix:after
+{
+  clear: both;
+}
+
+.clearfix
+{
+  zoom: 1;
+}
+
+.fullbg
+{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img, picture, video, embed
+{
+  max-width: 100%;
+}
+
+#mascara
+{
+  max-width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+#mascara > .fechar_modal
+{
+ position: absolute;
+ top: 20px;
+ right: 20px;
+ color: #fff;
+ font-size: 2.5rem;
+ cursor: pointer;
+ z-index: 98;
+}
+
+#capa
+{
+  background: url(../img/home.png) no-repeat bottom center fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+#capa > header
+{
+  background: none;
+  color: white;
+  position: fixed;
+  width: 100%;
+  transition: background 0.6s;
+  z-index: 99;
+}
+
+#capa > header > .container >#logo
+{
+  font-size: 3rem;
+  display: inline-block;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 30px;
+  /*margin-left: 10%;*/
+}
+
+#logo small
+{
+  font-size: 0.6rem;
+  display: block;
+  text-align: right;
+}
+
+#capa > header > .container > ul
+{
+  float: right;
+  list-style: none;
+  /* margin-right: 10%; */
+  margin-bottom: 0px;
+}
+
+#capa > header > .container > ul > li
+{
+  float: left;
+}
+
+#capa > header > .container > ul > li > a
+{
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 40px 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.active
+{
+  border-bottom: 2px solid #d1143c;
+}
+
+#capa > .container
+{
+  clear: both;
+}
+
+.animated-up
+{
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0%;
+  opacity: 0;
+}
+
+#container-text
+{
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -162.235px;
+}
+
+#container-text h1
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 6rem;
+  font-style: italic;
+  color: #000;
+}
+
+#container-text h2
+{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2rem;
+  margin-top: 10px;
+  font-style: italic;
+  color: #000;
+}
+
+#capa .btn
+{
+  border: 3px solid black;
+  color: black;
+  padding: 15px;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  /* width: 18%; */
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -33px;
+  transition: background 0.5s;
+}
+
+#img-arrow
+{
+  background: url("../img/arrow-down.png") center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s;
+}
+
+/*
+==========================================================================
+   Portfolio
+========================================================================== 
+*/
+#portfolio
+{
+  width: 100%;
+  height: 100%;
+  background: #fdfdfd;
+}
+
+#portfolio > .container
+{
+  width: 90%;
+  height: 90%;
+}
+
+#portfolio > .container > h1
+{
+  padding-top: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 2%;
+}
+
+.coluna
+{
+  width: 31.269000260575%; /* 264px / 1128px */
+  float: left;
+  margin-right: 3.01170921985816%; /* 24 / 1128px */
+  text-align: center;
+}
+
+/*.foto_02
+{
+  width: 59%;
+  margin: auto;
+  }*/
+
+  .coluna:last-child
+  {
+    margin-right: 0;
+  }
+
+  .coluna img:hover
+  {
+    opacity: 0.7;
+    cursor: pointer; 
+  }
+
+  .coluna h2
+  {
+    font-size: 2rem;
+  }
+
+/*
+==========================================================================
+   Sobre
+==========================================================================
+*/
+
+#sobre
+{
+  width: 100%;
+  height: 100%;
+  background: #fdfdfd;
+}
+
+#sobre > .container
+{
+  width: 90%;
+  height: 90%;
+}
+
+#sobre > .container > h1
+{
+  padding-top: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+
+#sobre figure
+{
+  width: 20.04423093626603%;
+  /* margin-right: 20px; */
+  /* float: left; */
+  margin: auto;
+}
+
+#sobre .text-content
+{
+  font-size: 1.8rem;
+}
+
+#sobre .text-content p
+{
+  text-align: center;
+  line-height: 3rem;
+  margin-top: 2%;
+}
+
+/*
+==========================================================================
+   Contato
+==========================================================================
+*/
+
+#contato
+{
+  width: 100%;
+  height: 60%;
+  background: url("../img/contato.jpg") center center;
+  background-attachment: fixed;
+  color: #efefef;
+}
+
+#contato > .container
+{
+  width: 90%;
+  height: 90%;
+}
+
+#contato > .container > h1
+{
+  padding-top: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+
+#contato .btn-content
+{
+  width: 31.22677593766%;
+  margin: 50px auto auto auto;
+}
+
+
+#contato .text-content > p
+{
+  font-size: 2rem;
+  text-align: center;
+}
+
+#contato > .container > .text-content > p > i
+{
+  margin-right: 10px;
+  font-size: 2.5rem;
+}
+
+.btn-social
+{
+  width: 32.41350995095%;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 2.5rem;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #000;
+  /*margin-bottom: 1.4577259%;*/
+  margin: auto;
+}
+
+.btn-social:focus
+{
+  text-decoration: none;
+}
+
+#btn-facebook
+{
+  display: inline-block;
+  color: #fff;
+  background: #3B5998;
+  /*margin-right: 0.72886295%;*/
+}
+
+#btn-facebook:hover
+{
+  text-decoration: none;
+  background: #2A416E;
+}
+
+#btn-insta
+{
+  display: inline-block;
+  color: #fff;
+  background: #305777;
+
+  /*margin-right: 0.72886295%;*/
+}
+
+#btn-insta:hover
+{
+  text-decoration: none;
+  background: #203A4F;
+}
+
+#btn-twitter
+{
+  display: inline-block;
+  color: #fff;
+  background: #00ACED;
+}
+
+#btn-twitter:hover
+{
+  text-decoration: none;
+  background: #007BA8;
+  }]
+
+/*
+==========================================================================
+   Rodape
+==========================================================================
+*/
+
+#contato > #rodape
+{
+  background: 
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+}
+
+#rodape > p
+{
+  font-size: 2.0rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*
+==========================================================================
+   Media Queries
+==========================================================================
+*/
+
+@media screen and (max-width: 1147px) {
+
+  #contato .btn-content
+  {
+    margin: 25px auto auto auto;
+  }
+
+  #btn-facebook, #btn-insta, #btn-twitter
+  {
+    display: inherit;
+  }
+
+}
+
+@media screen and (max-width: 1128px) {
+
+  .container
+  {
+    padding: 0 2.4em 0 2.4em;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #portfolio > .container > h1, #sobre > .container > h1
+  {
+    padding-top: 15%;
+  }
+
+  .coluna
+  {
+    width: 31.244316%;
+  }
+
+}
+
+@media screen and (max-width: 718px) {
+
+  #portfolio > .container > h1, #sobre > .container > h1
+  {
+    padding-top: 16%;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  #portfolio > .container > h1, #sobre > .container > h1
+  {
+    padding-top: 18%;
+  }
+
+}
+
+@media screen and (max-width: 595px) {
+
+  #capa > header > .container >#logo
+  {
+    font-size: 1.8rem;
+    margin-top: 41px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  #capa > header > .container >#logo
+  {
+    font-size: 1.8rem;
+    margin-top: 41px;
+  }
+
+  #portfolio > .container > h1, #sobre > .container > h1
+  {
+    padding-top: 23%;
+  }
+
+}
+
+@media screen and (max-width: 510px) {
+
+  #capa > header > .container >#logo
+  {
+    display: none;
+  }
+
+  #capa > header > .container > ul
+  {
+    float: none;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+ #sobre .text-content p
+ {
+  font-size: 1.2rem;
+}
+
+#capa > header > .container > ul > li > a
+{
+  font-size: 1.2rem;
+}
+
+}
