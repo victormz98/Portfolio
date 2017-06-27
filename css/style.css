@@ -45,10 +45,12 @@ img, picture, video, embed{
   height: 50px;
   padding: 3px 0px 0px 1px !important;
   background: none;
-  color: #fff;
+  color: #000;
+  border: 1px solid #000;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
+  margin-top: 400px;
 }
 /*******************Capa*******************/
 #capa
@@ -118,6 +120,8 @@ img, picture, video, embed{
 {
   color: #000;
   text-align: center;
+  position: relative;
+  top: 0%;
 }
 
 #container-text h1

@@ -9,68 +9,9 @@ $(document).ready(function($) {
 		}, 1000); //Tempo em milisegundos
 	});
 
-// efeito btn
-$(".btn").mouseover(function(event) {
-	$(this).css({
-		'background': 'rgba(255,255,255,.1)'
-	});
-
-	$("#img-arrow").css({
-		"transform": "scale(1.2)"
-	});
-});
-
-$(".btn").mouseout(function(event) {
-	$(this).css({
-		'background': 'none'
-	});
-
-	$("#img-arrow").css({
-		"transform": "scale(1.0)"
-	});
-
-});
-
-/*Navbar*/
-// $(document).scroll(function () { // oscultador de scroll
-//     var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
-//     if (posicaoScroll == 0) {
-//     	$("header").css({
-//     		"background": "none"
-//     	});
-
-//     }else{
-//     	$("header").css({
-//     		"background": "rgba(0, 0, 0, 0.5)"
-//     	});
-//     }
-// });
-
-// function addClass(el) {
-//     menu.removeClass('active');
-//     $(el).addClass('active');
-// };
-
-// var menu = $('header ul li');
-// var sectionPositions = $('section').map(function(){
-//     return $(this).position().top;
-// });
-// var sections = $('section');
-// $(document).on('scroll', function () {
-//     var scroll = $(document).scrollTop();
-//     var currentElement;
-//     $(sectionPositions).each(function (i) {
-//         if (scroll > this - 50) currentElement = menu[i];
-//     });
-//     currentElement && addClass(currentElement);
-// });
-// menu.on('click', function () {
-//     addClass(this);
-// });
-
 //efeito surgir capa
 $(".animated-up").css({
-	'top': '18%',
+	'top': '20%',
 	// 'opacity': 1,
 	'transition': 'all 2s'
 });
