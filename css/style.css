@@ -81,15 +81,23 @@ img, picture, video, embed{
 	background: transparent;
 	transition: width .5s ease, background-color .5s ease;
 }
-
 #collapse-mobile li:hover:after{
-
-    width: 100%;
+  width: 100%;
 	background: #1ABC9C;
 }
-
 #collapse-mobile li a:hover, #collapse-mobile li a:focus{
 	color: #1ABC9C !important;
+}
+.navbar-toggle:focus{
+  background: transparent !important;
+  border-color: #1ABC9C !important;
+}
+.navbar-toggle{
+  border-color: #1ABC9C !important;
+}
+
+.icon-bar{
+  background: #1ABC9C !important;
 }
 
 /*Capa*/
