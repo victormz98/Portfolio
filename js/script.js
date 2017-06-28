@@ -59,5 +59,4 @@ $(document).ready(function ($) {
 		$("#sobre>.container>.row>.col-sm-3").removeClass("col-xs-6");
 		$("#sobre>.container>.row>.col-sm-3").addClass("col-xs-12");
 	}
-
 }); /*Document.ready*/

@@ -195,6 +195,51 @@ img, picture, video, embed{
   background: #efefef;
 }
 
+/*.container {
+    position: relative;
+    width: 50%;
+}*/
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.caixa {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container-effect:hover .image {
+  opacity: 0.3;
+}
+
+.container-effect:hover .caixa {
+  opacity: 1;
+}
+
+.text {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+@media screen and (max-width: 767px){
+    .mrgn-bottom-sm{
+      margin-bottom: 20px;
+    }
+}
+
 /*Sobre*/
 #sobre{
   width: 100%;
@@ -397,7 +442,6 @@ img, picture, video, embed{
     }
 }
 
-
 /*Contato*/
 #contato{
     width: 100%;
@@ -406,28 +450,6 @@ img, picture, video, embed{
     background-image: url(../img/map-image.png);
     color: #efefef;
 }
-
-/*#contato .titulo{
-    background: #1ABC9C;
-    width: 300px;
-    margin-top: 0px;
-    padding: 0px 15px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}*/
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "PT Sans";
-  background-color: #ddd;
-  color: #333;
-}
-
 .section {
   position: relative;
   width: 900px;
@@ -437,41 +459,34 @@ body {
   text-align: center;
   margin: 60px auto;
 }
-
 .section h1 {
   position: relative;
   margin-top: -14px;
   display: inline-block;
   letter-spacing: 4px;
 }
-
 .top-border{
   position: absolute;
   height: 2px;
   width: 24%;
   background-color: #999;
 }
-
 .right {
   right: 0;
 }
-
 .left {
   left: 0;
 }
-
 @media (max-width: 685px) {
 .top-border {	
   width: 18%;
 	}
 }
-
 .section p {
   width: 61%;
   margin: 20px auto 40px auto;
   line-height: 30px;
 }
-
 .section a {
   outline: 0;
   display: inline-block;
@@ -487,9 +502,8 @@ body {
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
-
 .section a:hover {
-  background-color: #1D222D;
+  background-color: #0077B5;
 }
 
 .section a:link, .section a:visited, .section a:link:hover, .section a:visited:hover {
