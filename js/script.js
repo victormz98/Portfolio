@@ -11,7 +11,7 @@ $(document).ready(function ($) {
 
 	//efeito surgir capa
 	$(".animated-up").css({
-		'top': '30%',
+		'top': '20%',
 		// 'opacity': 1,
 		'transition': 'all 2s'
 	});

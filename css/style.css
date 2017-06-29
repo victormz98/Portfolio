@@ -90,14 +90,14 @@ img, picture, video, embed{
 }
 .navbar-toggle:focus{
   background: transparent !important;
-  border-color: #1ABC9C !important;
+  border-color: #fff !important;
 }
 .navbar-toggle{
-  border-color: #1ABC9C !important;
+  border-color: #fff !important;
 }
 
 .icon-bar{
-  background: #1ABC9C !important;
+  background: #fff !important;
 }
 
 /*Capa*/
