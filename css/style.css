@@ -190,9 +190,15 @@ img, picture, video, embed{
 #portfolio
 {
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   /*padding-top: 93px;*/
   background: #efefef;
+}
+
+@media screen and (min-height: 820px){
+  #portfolio{
+    height: 100%;
+  }
 }
 
 /*.container {
